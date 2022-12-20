@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap')
+
+*
+    font-family: 'Plus Jakarta Sans', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+//compulsory class in FrontendMentor challenges
+.attribution 
+    font-size: 11px
+    text-align: center
+.attribution a 
+    color: hsl(228, 45%, 44%)
+
+$primary_ColorOne: hsl(1, 90%, 64%) //red
+$primary_ColorTwo: hsl(219, 85%, 26%) //blue
+$neutral_ColorOne: hsl(0, 0%, 100%) //white
+$neutral_ColorTwo: hsl(210, 60%, 98%) //Very light grayish blue
+$neutral_ColorThree: hsl(211, 68%, 94%) //Light grayish blue 1
+$neutral_ColorFour: hsl(205, 33%, 90%) //Light grayish blue 2
+$neutral_ColorFive: hsl(219, 14%, 63%) //Grayish blue
+$neutral_ColorSix: hsl(219, 12%, 42%) //Dark grayish blue
+$neutral_ColorSeven: hsl(224, 21%, 14%) //Very dark blue
+$medium_font_weight: 500
+$extrabold_font_weight: 800
+.flexBox
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+.primary_
+    margin: auto
+    margin-top: 70px
+    padding: 20px 10px
+    max-width: 690px
+    &explanation1, &explanation2, &option, &name, &post, &time
+        font-size: 0.9rem
+
+    &box
+        padding: 10px
+        margin: 10px
+    &club
+        font-weight: $extrabold_font_weight
+        color: $primary_ColorTwo
+    &explanation1, &option
+        color: $neutral_ColorSix  
+    &explanation2
+        padding: 15px
+        border: 1px solid $neutral_ColorFour
+        
+        margin-top: 15px
+        margin-left: 60px
+        color: $neutral_ColorFive
+    &explanation2:hover
+        cursor: pointer
+        background-color: $neutral_ColorTwo
+    &name
+        font-weight: 800
+        color: $neutral_ColorSeven
+    &post
+        font-weight: 800
+        color: $neutral_ColorSix
+    &option
+        font-size: $medium_font_weight
+        margin-top: 10px
+    &option:hover, &name:hover, &post:hover, &club:hover
+        color: $primary_ColorTwo
+        cursor: pointer
+    &profilePic
+        height: 40px
+        width: 60px
+        border-radius: 100px
+        float: left
+        padding: 0 10px
+    &targetPic
+        float: right
+        height: 40px
+        width: 40px
+        display: inline-block
+        margin-left: 20px
+
+    &time
+        color: $neutral_ColorFive
+        width: 150px
+        margin-left: 60px
+        
+    &title
+        font-size:  1.5rem
+        font-weight: $extrabold_font_weight
+        width: 200px
+        display: inline
+        color: $neutral_ColorSeven
+        margin-bottom: 50px
+    &num
+        color: $neutral_ColorOne
+        background-color: $primary_ColorTwo
+        padding: 1px 10px
+        font-size: 1.2rem
+        border-radius: 5px
+        margin-left: 10px
+
+.-unread_style_bg
+    background-color: $neutral_ColorTwo
+.-unread_symbol
+    width:7px
+    height:7px
+    background-color: $primary_ColorOne
+    display: inline-block
+    margin: 1px 10px
+    border-radius: 100px
+
+
+@media only screen and (min-width: 481px)
+
+    .-marginTop_negative
+        margin-top: -20px
+@media only screen and (min-width: 600px)
+    .primary_explanation1, .primary_explanation2, .primary_option, .primary_name, .primary_post, .primary_time
+        font-size: 1rem
+    .flexBox .primary_explanation1
+        font-size: 1rem
+    .-unread_symbol
+        width:10px
+        height:10px

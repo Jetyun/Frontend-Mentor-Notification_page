@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.primary_ {
+  margin: auto;
+  margin-top: 70px;
+  padding: 20px 10px;
+  max-width: 690px;
+}
+.primary_explanation1, .primary_explanation2, .primary_option, .primary_name, .primary_post, .primary_time {
+  font-size: 0.9rem;
+}
+.primary_box {
+  padding: 10px;
+  margin: 10px;
+}
+.primary_club {
+  font-weight: 800;
+  color: hsl(219deg, 85%, 26%);
+}
+.primary_explanation1, .primary_option {
+  color: hsl(219deg, 12%, 42%);
+}
+.primary_explanation2 {
+  padding: 15px;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  margin-top: 15px;
+  margin-left: 60px;
+  color: hsl(219deg, 14%, 63%);
+}
+.primary_explanation2:hover {
+  cursor: pointer;
+  background-color: hsl(210deg, 60%, 98%);
+}
+.primary_name {
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+}
+.primary_post {
+  font-weight: 800;
+  color: hsl(219deg, 12%, 42%);
+}
+.primary_option {
+  font-size: 500;
+  margin-top: 10px;
+}
+.primary_option:hover, .primary_name:hover, .primary_post:hover, .primary_club:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+.primary_profilePic {
+  height: 40px;
+  width: 60px;
+  border-radius: 100px;
+  float: left;
+  padding: 0 10px;
+}
+.primary_targetPic {
+  float: right;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.primary_time {
+  color: hsl(219deg, 14%, 63%);
+  width: 150px;
+  margin-left: 60px;
+}
+.primary_title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 200px;
+  display: inline;
+  color: hsl(224deg, 21%, 14%);
+  margin-bottom: 50px;
+}
+.primary_num {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 1px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.-unread_style_bg {
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.-unread_symbol {
+  width: 7px;
+  height: 7px;
+  background-color: hsl(1deg, 90%, 64%);
+  display: inline-block;
+  margin: 1px 10px;
+  border-radius: 100px;
+}
+
+@media only screen and (min-width: 481px) {
+  .-marginTop_negative {
+    margin-top: -20px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .primary_explanation1, .primary_explanation2, .primary_option, .primary_name, .primary_post, .primary_time {
+    font-size: 1rem;
+  }
+  .flexBox .primary_explanation1 {
+    font-size: 1rem;
+  }
+  .-unread_symbol {
+    width: 10px;
+    height: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
